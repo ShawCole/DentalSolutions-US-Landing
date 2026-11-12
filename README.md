@@ -1,7 +1,15 @@
 # Dental Solutions Puerto Cancún, US landing page
 
 Live: https://dentalsolutions-puertocancun.netlify.app (noindex until the clinic signs off)
-Netlify site: dentalsolutions-puertocancun. Deploy with `netlify deploy --prod --dir=.` from this folder.
+Staging: https://dentalsolutions-puertocancun-staging.netlify.app
+
+## How to make changes
+- Work on the `staging` branch. Every push to `staging` deploys automatically to the
+  staging site within a minute or two. It is a plain static page, so there is no build step:
+  edit `index.html`, `assets/` or `fonts/` and push.
+- The live site does not deploy from this repo on its own. Once a change is approved on
+  staging it is merged into `main` and deployed to the live site.
+- Form submissions on staging land in the staging site's Netlify dashboard, not the clinic's.
 
 English, US-facing rebuild of what works on the clinic's paid site (dsc.planetierra.com.mx),
 which is Spanish-only and still shows [PENDIENTE]/[VALIDAR] placeholders to the public.
